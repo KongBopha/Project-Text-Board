@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container">
+         <div class="wrapper" id="box"></div>
+    </div>
+</body>
+<script>
+ for (let i=0;i<=2300;i++){
+    const div = document.getElementById('box');
+    const cloneDiv = div.cloneNode(true);
+    cloneDiv.id = "box"+(i+1);
+    const container = document.querySelector('.container');
+    container.appendChild(cloneDiv);
+    }
+   
+    
+</script>
+</html>
