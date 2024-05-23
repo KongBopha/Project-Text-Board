@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<style>
+    .Screen{
+        height: 100px;
+        width: 80%;
+        border: 5px solid;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: rgb(18, 17, 17); 
+        /* color: rgb(245, 250, 250); */
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    .input{
+        height: 40px;
+        width: 250px;
+        border: 2px solid;
+        position: relative;
+        top: 80px;
+        left: 250px;
+        
+    }
+    .add{
+        height: 30px;
+        width: 70px;
+        border: 2px solid;
+        position: relative;
+        top: 80px;
+        left: 250px;
+        background-color: blueviolet;
+    }
+    .size{
+        height: 26px;
+        width: 100px;
+        border: 1px solid;
+        position: relative;
+        left: 10px;
+    }
+    .choose{
+        border: 1px solid;
+        position: relative;
+        right: 292px;
+    }
+    .fontStyle{
+        border: 1px solid;
+        position: absolute;
+        /* top: 50px; */
+        right: 200px;
+    }
+    p{
+        display: inline-block;
+        color: #12e0dc;
+        padding-left: 100%;
+        animation: move 10s linear infinite;
+    }
+    @keyframes move {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%,0); }
+}
+</style>
+<body>
+    <div>
+        <div>
+            <div class="Screen" id="Bntscreen">
+                <p id="Btnbox" class="text"></p>
+            </div>
+            <input class="input" id='Btninput'  type='text' placeholder="Enter text" onclick="changecolortext()">
+            
+            <button id="Btnadd" class="add">Submit</button>
+        
+            <div>
+                <div class="flex relative top-32 left-10">
+                <label for="cars">Choose a size:</label>
+                <input placeholder=" Enter size" class="size" onkeyup="changesize()" id="size">
+                <div class="flex relative top-16 right-32">
+                    <div>background-color: </div>
+                    <input type="color" id="Btnbackground-color" onclick="changeColorbackground()">
+                </div>
+                <div class="flex relative top-28 right-64">
+                    <div>text-color: </div>
+                    <input type="color" id="text-color" onclick="changeColortext()">
+                </div>
+                <div class="choose">
+                    <select id="cars" name="cars" onclick="changeFonttext()">
+                        <option >8</option>
+                        <option >9</option>
+                        <option >10</option>
+                        <option >11</option>
+                        <option >12</option>
+                        <option >14</option>
+                        <option >16</option>
+                        <option >18</option>
+                        <option >20</option>
+                        <option >22</option>
+                        <option >24</option>
+                        <option >26</option>
+                        <option >28</option>
+                        <option >36</option>
+                        <option >48</option>
+                        <option >72</option>
+                    </select>
+                </div>
+                <div class="fontStyle">
+                    <select id="carsstyle"  onclick="changeFontstyle()">
+                        <option >Times New Roman</option>
+                        <option >AKbalthom Freehand</option>
+                        <option >AKbalthom Superhero</option>
+                        <option >AKbalthom KhmerHand</option>
+                        <option >Algerian</option>
+                        <option >14</option>
+                        <option >16</option>
+                        <option >18</option>
+                        <option >20</option>
+                        <option >22</option>
+                        <option >24</option>
+                        <option >26</option>
+                        <option >28</option>
+                        <option >36</option>
+                        <option >48</option>
+                        <option >72</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const input=document.getElementById('Btninput');
+        const button=document.getElementById('Btnadd');
+        const box=document.getElementById('Btnbox');
+
+        const backgroundcolor=document.getElementById('Btnbackground-color');
+        const textcolor=document.getElementById('text-color');
+        const screen=document.getElementById('Btnscreen');
+        const textfont=document.getElementById('cars');
+
+        function output(){
+            box.innerHTML = input.value;
+        }
+        button.addEventListener('click',output);
+
+
+        function changeColorbackground() {
+            const color = backgroundcolor.value;
+            const screens = document.getElementsByClassName("Screen");
+            for (let i = 0; i < screens.length; i++) {
+                screens[i].style.backgroundColor = color;
+            }
+        }
+        
+        function changeColortext() {
+            const colors = textcolor.value;
+            const screens = document.getElementsByClassName("text");
+            for (let i = 0; i < screens.length; i++) {
+                screens[i].style.color = colors;
+            }
+        }
+
+        function changeFonttext() {
+            const sizes = textfont.value;
+            const screens = document.getElementsByClassName("text");
+            for (let i = 0; i < screens.length; i++) {
+                screens[i].style.fontSize = sizes+"px";
+            }
+        }
+
+        function changesize(){
+            const size=document.getElementById("size").value;
+            const screens = document.getElementsByClassName("text");
+            for (let i = 0; i < screens.length; i++) {
+                screens[i].style.fontSize = size+"px";
+            }
+        }
+
+        const changeFontstyle=function(Fontstyle){
+            const carsstyle=document.getElementById("carsstyle");
+            const screens = document.getElementsByClassName("text");
+            for (let i = 0; i < screens.length; i++) {
+                screens[i].style.fontfamily = carsstyle.value;
+            }
+        }
+// function changeFonttext() {
+//     const sizes = textfont.value;
+//     document.getElementsByClassName("text").style.fontSize=sizes+"px";
+// }
+    </script>
+</body>
+</html>
