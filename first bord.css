@@ -1,0 +1,40 @@
+
+body ,html{
+    height: 100%;
+    margin: 0px;
+  }
+.containner{
+    width: 100%;
+    background-image: url("neon-light-background-free-vector.jpg");
+
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+}
+
+ .wrapper{ 
+    color: rgb(0, 248, 91); 
+    font-size: 35px; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+.start{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(222, 133, 45);
+    color: rgb(7, 6, 6);   
+}
+.text{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 110px;
+}
