@@ -8,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Hanuman:wght@100;300;400;700;900&family=Moul&family=Moulpali&family=Noto+Serif+Khmer:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <style>
     body ,html{
@@ -95,6 +97,63 @@
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%,0); }
 }
+
+/* Create new font family */
+@font-face {
+    font-family: Alegro-Star;
+    src: url(Font-family/Alegro\ Star\ TTF\ Demo.ttf);
+}
+
+@font-face {
+    font-family: Blugide;
+    src: url(Font-family/Blugide\ DEMO\ VERSION.ttf);
+}
+
+@font-face {
+    font-family: Italic-Blugide;
+    src: url(Font-family/Blugide\ Italic\ DEMO\ VERSION.ttf);
+}
+
+@font-face {
+    font-family: Imagination;
+    src: url(Font-family/imagination\ Demo.ttf);
+}
+
+@font-face {
+    font-family: Lecuretta;
+    src: url(Font-family/Lecuretta.ttf);
+}
+
+@font-face {
+    font-family: MONALIZED;
+    src: url(Font-family/MONALIZED.ttf);
+}
+
+@font-face {
+    font-family: Speed-theme;
+    src: url(Font-family/Speed\ Themes\ Demo.ttf);
+}
+
+@font-face {
+    font-family: Sport-hero;
+    src: url(Font-family/Sports\ Heroes\ Demo.ttf);
+}
+
+@font-face {
+    font-family: StonePower;
+    src: url(Font-family/StonePower-Regular.ttf);
+}
+
+@font-face {
+    font-family: BlackCat;
+    src: url(Font-family/TC-BlackCat.ttf);
+}
+
+@font-face {
+    font-family: WaltographUI;
+    src: url(Font-family/waltographUI.ttf);
+}
+
 </style>
 <body>
     <div class="wrapper">
@@ -143,21 +202,20 @@
                 <div class="fontStyle">
                     <select id="carsstyle"  onclick="changeFontstyle()">
                         <option >Times New Roman</option>
-                        <option >AKbalthom Freehand</option>
-                        <option >AKbalthom Superhero</option>
-                        <option >AKbalthom KhmerHand</option>
-                        <option >Algerian</option>
-                        <option >14</option>
-                        <option >16</option>
-                        <option >18</option>
-                        <option >20</option>
-                        <option >22</option>
-                        <option >24</option>
-                        <option >26</option>
-                        <option >28</option>
-                        <option >36</option>
-                        <option >48</option>
-                        <option >72</option>
+                        <option >Alegro-Star</option>
+                        <option >Blugide</option>
+                        <option >Imagination</option>
+                        <option >Lecuretta</option>
+                        <option >MONALIZED</option>
+                        <option >Speed-theme</option>
+                        <option >Sport-hero</option>
+                        <option >StonePower</option>
+                        <option >BlackCat</option>
+                        <option >WaltographUI</option>
+                        <option >Hanuman</option>
+                        <option >Moul</option>
+                        <option >Angkor</option>
+                        <option >Moulpali</option>
                     </select>
                 </div>
                 </div>
@@ -217,7 +275,7 @@
             const carsstyle=document.getElementById("carsstyle");
             const screens = document.getElementsByClassName("text");
             for (let i = 0; i < screens.length; i++) {
-                screens[i].style.fontfamily = carsstyle.value;
+                screens[i].style.fontFamily = carsstyle.value;
             }
         }
 // function changeFonttext() {
