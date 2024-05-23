@@ -11,7 +11,26 @@
     
 </head>
 <style>
+    body ,html{
+        height: 100%;
+        margin: 0px;
+    }
+    .wrapper{
+        width: 100%;
+        background-image: url("futuristic-neon-line-background-free-vector.jpg");
+        /* Full height */
+        height: 100%;  
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
     .Screen{
+        
         height: 100px;
         width: 80%;
         border: 5px solid;
@@ -52,11 +71,13 @@
         border: 1px solid;
         position: relative;
         left: 10px;
+        color: white;
     }
     .choose{
         border: 1px solid;
         position: relative;
         right: 292px;
+        color: white;
     }
     .fontStyle{
         border: 1px solid;
@@ -76,8 +97,10 @@
 }
 </style>
 <body>
-    <div>
-        <div>
+    <div class="wrapper">
+        
+        <div >
+            
             <div class="Screen" id="Bntscreen">
                 <p id="Btnbox" class="text"></p>
             </div>
@@ -87,17 +110,17 @@
         
             <div>
                 <div class="flex relative top-32 left-10">
-                <label for="cars">Choose a size:</label>
-                <input placeholder=" Enter size" class="size" onkeyup="changesize()" id="size">
+                <label for="cars" style="color: white;">Choose a size:</label>
+                <input placeholder=" Enter size" class="size" onkeyup="changesize()" id="size" style="color:black;">
                 <div class="flex relative top-16 right-32">
-                    <div>background-color: </div>
+                    <div style="color: white;">background-color: </div>
                     <input type="color" id="Btnbackground-color" onclick="changeColorbackground()">
                 </div>
                 <div class="flex relative top-28 right-64">
-                    <div>text-color: </div>
-                    <input type="color" id="text-color" onclick="changeColortext()">
+                    <div style="color: rgb(243, 238, 238);">text-color: </div>
+                    <div style="color: black;"><input type="color" id="text-color" onclick="changeColortext()" ></div>
                 </div>
-                <div class="choose">
+                <div class="choose" style="color: black;">
                     <select id="cars" name="cars" onclick="changeFonttext()">
                         <option >8</option>
                         <option >9</option>
