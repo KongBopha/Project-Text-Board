@@ -13,90 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Hanuman:wght@100;300;400;700;900&family=Moul&family=Moulpali&family=Noto+Serif+Khmer:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <style>
-    body ,html{
-        height: 100%;
-        margin: 0px;
-    }
-    .wrapper{
-        width: 100%;
-        background-image: url("futuristic-neon-line-background-free-vector.jpg");
-        /* Full height */
-        height: 100%;  
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        margin: auto;
+    
+ 
 
-    }
-    .Screen{
-        
-        height: 100px;
-        width: 80%;
-        border: 5px solid;
-        position: relative;
-        top: 50px;
-        left: 50px;
-        background-color: rgb(18, 17, 17); 
-        /* color: rgb(245, 250, 250); */
-        white-space: nowrap;
-        overflow: hidden;
-        box-sizing: border-box;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 50px;
-    }
-    .input{
-        height: 40px;
-        width: 250px;
-        border: 2px solid;
-        position: relative;
-        top: 80px;
-        left: 250px;
-        
-    }
-    .add{
-        height: 30px;
-        width: 70px;
-        border: 2px solid;
-        position: relative;
-        top: 80px;
-        left: 250px;
-        background-color: blueviolet;
-    }
-    .size{
-        height: 26px;
-        width: 100px;
-        border: 1px solid;
-        position: relative;
-        left: 10px;
-        color: white;
-    }
-    .choose{
-        border: 1px solid;
-        position: relative;
-        right: 292px;
-        color: white;
-    }
-    .fontStyle{
-        border: 1px solid;
-        position: absolute;
-        /* top: 50px; */
-        right: 200px;
-    }
-    p{
-        display: inline-block;
-        color: #12e0dc;
-        padding-left: 100%;
-        animation: move 10s linear infinite;
-    }
-    @keyframes move {
-    0%   { transform: translate(0, 0); }
-    100% { transform: translate(-100%,0); }
-}
 
 /* Create new font family */
 @font-face {
@@ -153,12 +72,280 @@
     font-family: WaltographUI;
     src: url(Font-family/waltographUI.ttf);
 }
+@media only screen and (max-width:600px)
+{
+    body ,html{
+        height: 100%;
+        margin: 0px;
+        
+    }
+    .wrapper{
+        width: 100%;
+        background-image: url("futuristic-neon-line-background-free-vector.jpg");
+        height: 100%;  
+        background-position:  center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding-right: 40px; 
+    } 
+    .Screen{
+        
+        height: 100px;
+        width: 80%;
+        border: 5px solid;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: rgb(18, 17, 17); 
+        /* color: rgb(245, 250, 250); */
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    .input{
+        height: 40px;
+        width: 200px;
+        border: 2px solid;
+        top: 90px;
+        position: relative;
+        margin-left: 60px;
+        
+    }
+    .add{
+        height: 30px;
+        width: 70px;
+        border: 2px solid;
+        position: relative;
+        top: 90px;
+        left: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        color: rgb(17, 177, 177);
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        border: 3px solid #00d7c3;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .add:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+        border: 3px solid #ffffff;
+        background-color: #8725d8;
+        color: azure;
+        }
+    .fontStyle{
+        position: relative;
+        right: 240px;
+        top: 180px;
+        display: flex;
+        width: 100px;
+        height: 40px;
+        
+    }
+    #carsstyle{
+        margin-left: 40px ;
+    }
+    .size{
+        height: 26px;
+        width: 100px;
+        position: relative;
+        left:10px;
+        color: white;
+    }
+    .choose{
+        
+        position: relative;
+        left: 50px;
+        color: white;
+    }
+    label{
+        margin-left: 20px;
+        white-space: nowrap;
+        font-family: cursive;
+    }   
+    p{
+        display: inline-block;
+        color: #12e0dc;
+        padding-left: 100%;
+        animation: move 10s linear infinite;
+    }
+    @keyframes move {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%,0); }
+}
+    .bg-color{
+        white-space: nowrap;
+        margin-left: -70px;
+        font-family: cursive;
+    }
+    #Btnbackground-color{
+        margin-left: 40px;
+        
+    }
+    .texts-colors{
+        margin-top: 120px; 
+        display: flex;
+        margin-left: -290px;   
+        
+    }
+    .text-color{
+        white-space: nowrap;
+        margin-left: -60px;
+        font-family: cursive;
+         
+    }
+    #text-color{
+        margin-left: 50px;
+    }
+ 
+
+}
+@media only screen and (min-width:610px){
+    body ,html{
+        height: 100%;
+        margin: 0px;
+        overflow-x: hidden;
+    }
+    .wrapper{
+        width: 100%;
+        background-image: url("futuristic-neon-line-background-free-vector.jpg");
+        height: 100%;  
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+       
+    } 
+    .Screen{
+        
+        height: 100px;
+        width: 80%;
+        border: 5px solid;
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background-color: rgb(18, 17, 17); 
+        /* color: rgb(245, 250, 250); */
+        white-space: nowrap;
+        overflow: hidden;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+    }
+    .input{
+        height: 40px;
+        width: 250px;
+        border: 2px solid;
+        top: 90px;
+        position: relative;
+        margin-left: 60px;
+    }
+    .add{
+        height: 30px;
+        width: 70px;
+        border: 2px solid;
+        position: relative;
+        top: 90px;
+        left: 200px; 
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        color: rgb(17, 177, 177);
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        border: 3px solid #00d7c3;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .add:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+        border: 3px solid #ffffff;
+        background-color: #8725d8;
+        color: azure;
+        }
+    .fontStyle{
+        width: 100px;
+        height: 30px;
+        display: flex;
+        margin-left: -220px;
+    }
+    #carsstyle{
+        margin-left: 40px ;
+    }
+    .size{
+        height: 26px;
+        width: 100px;
+        position: relative;
+        left:10px;
+        color: white;
+    }
+    .choose{
+         
+        position: relative;
+        right: 350px;
+        top:2px; 
+        color: white;
+    }
+    label{
+        margin-left: 20px;
+        white-space: nowrap;
+        font-family: cursive;
+    }   
+    .bg-color{
+        white-space: nowrap;
+        font-family: cursive;
+    }
+    #Btnbackground-color{
+        margin-left: 40px;
+        
+    }
+    .texts {
+        display: flex;
+    }
+    .texts-colors{
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+        margin-left: 30px;
+    }
+    .text-color {
+        white-space: nowrap;
+        font-family: cursive;
+    }
+    #text-color {
+        margin-left: 10px;
+    }
+    p{
+        display: inline-block;
+        color: #12e0dc;
+        padding-left: 100%;
+        animation: move 10s linear infinite;
+    }
+    @keyframes move {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%,0); }
+}
+    
+
+}
 
 </style>
 <body>
     <div class="wrapper">
         
-        <div >
+        <div>
             
             <div class="Screen" id="Bntscreen">
                 <p id="Btnbox" class="text"></p>
@@ -169,15 +356,15 @@
         
             <div>
                 <div class="flex relative top-32 left-10">
-                <label for="cars" style="color: white;">Choose a size:</label>
-                <input placeholder=" Enter size" class="size" onkeyup="changesize()" id="size" style="color:black;">
-                <div class="flex relative top-16 right-32">
-                    <div style="color: white;">background-color: </div>
-                    <input type="color" id="Btnbackground-color" onclick="changeColorbackground()">
-                </div>
-                <div class="flex relative top-28 right-64">
-                    <div style="color: rgb(243, 238, 238);">text-color: </div>
-                    <div style="color: black;"><input type="color" id="text-color" onclick="changeColortext()" ></div>
+                    <label for="cars" style="color: white;" for="name" >Choose a size </label>
+                    <input placeholder=" Enter size" class="size" onkeyup="changesize()" id="size" style="color:black;">
+                    <div class="flex relative top-16 right-32">
+                        <div class="bg-color" style="color: white;">Background color: </div>
+                        <input type="color" id="Btnbackground-color" onclick="changeColorbackground()">
+                    </div>
+                    <div class="texts-colors">
+                        <div class="text-color" style="color: rgb(243, 238, 238);">Text-color: </div>
+                        <div style="color: black;"><input type="color" id="text-color" onclick="changeColortext()" ></div>
                 </div>
                 <div class="choose" style="color: black;">
                     <select id="cars" name="cars" onclick="changeFonttext()">
@@ -199,7 +386,10 @@
                         <option >72</option>
                     </select>
                 </div>
-                <div class="fontStyle">
+                <div class="fontStyle  ">
+                        <label for="cars" style="color: white;" for="name" >Font: </label>
+                   
+                    
                     <select id="carsstyle"  onclick="changeFontstyle()">
                         <option >Times New Roman</option>
                         <option >Alegro-Star</option>
