@@ -12,11 +12,10 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-attachment: fixed;
+      
 
   }
-  background-image{
-    object-fit:  scale-down;
-  }
+ 
 }
 @media only screen and (min-width:610px){
     body ,html{
@@ -36,11 +35,14 @@
     
   
   }
+.control{
+  display: flex;
+}
 
 }
 
  .wrapper{ 
-    color: rgb(0, 248, 91); 
+    color: rgb(92, 244, 255); 
     font-size: 35px; 
     display:flex;
     flex-direction: column;
@@ -58,6 +60,7 @@
   -webkit-transition: all .15s ease-in-out;
   transition: all .15s ease-in-out;
   color: #00d7c3;
+  margin-right: 100px;
 }
 .start:hover {
   box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
@@ -66,7 +69,44 @@
   color: azure;
 }
 .text{
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  margin-top: 110px;
+  margin-top: 120px;
+  text-shadow: 1px 1px 5px black, 0 0 40px rgb(255, 255, 255), 0 0 20px rgb(120, 226, 255);
+  
+}
+.about{
+  width: 90px;
+  height: 33px;
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+  margin-left: 0;
+}
+.about:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: #06b0ce;
+  color: azure;
+}
+.more{
+  width: 80px;
+  height: 33px;
+  background-color: transparent;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  color: #00d7c3;
+  margin-left: 0;
+  margin-top: 100px;
+}
+.more:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+  background-color: #06b0ce;
+  color: azure;
 }

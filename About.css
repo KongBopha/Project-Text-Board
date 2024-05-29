@@ -1,0 +1,201 @@
+@media only screen and (max-width: 600px) {
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        background-image: url("led2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+        position: relative; 
+    }
+    .about-us{
+        position: absolute;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        left: 35%;
+        font-weight: bolder;
+        top: 25px;
+        text-decoration: underline;
+        text-shadow: 1px 1px 5px black, 0 0 40px blue, 0 0 20px darkblue;
+    }
+    button {
+        margin-top: 20px;
+        width: 50px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(107, 208, 248);
+        font-size: large;
+        color: whitesmoke;
+    }
+    button:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+        border: 3px solid #00d7c3;
+        background-color: #06b0ce;
+        color: azure;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .person1 {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 150px;
+        height: 140px;
+        perspective: 1000px;
+        margin: 30px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 2px 2px rgb(208, 50, 240);
+    }
+    .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+    .flip-card-front {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .flip-card-back {
+        background-color: #ff38ff;
+        color: white;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+@media only screen and (min-width: 610px) { /*desktop screen*/
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+    .container {
+        width: 100%;
+        height: 100%;
+        background-image: url("led2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed; 
+        position: relative; 
+    }
+    .about-us{
+        position: absolute;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        left: 50%;
+        font-weight: bolder;
+        top: 25px;
+        text-decoration: underline;
+        text-shadow: 1px 1px 5px black, 0 0 40px blue, 0 0 20px darkblue;
+    }
+    button {
+        margin-top: 20px;
+        width: 50px;
+        height: 40px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(107, 208, 248);
+        font-size: large;
+        color: whitesmoke;
+    }
+    button:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+        border: 3px solid #00d7c3;
+        background-color: #06b0ce;
+        color: azure;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+    .person1 {
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+    }
+    .flip-card {
+        background-color: transparent;
+        width: 150px;
+        height: 140px;
+        perspective: 1000px;
+        margin: 30px;
+    }
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 2px 2px rgb(208, 50, 240);
+    }
+    .flip-card.flipped .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+    .flip-card-front {
+        background-color: rgb(255, 255, 255);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .flip-card-back {
+        background-color: #ff38ff;
+        color: white;
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
