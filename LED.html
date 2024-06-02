@@ -91,51 +91,60 @@
         margin: 0;
         padding-right: 40px; 
     } 
-    .Screen{
-        
-        height: 100px;
-        width: 80%;
+    .Screen{ 
+        height: 130px;
+        width: 100%;
         border: 5px solid;
         position: relative;
-        top: 50px;
-        left: 50px;
-        background-color: rgb(18, 17, 17); 
-        /* color: rgb(245, 250, 250); */
+        top: 40px;
+        left: 17px;
+        background-color: rgb(38, 35, 35);  
+        color: rgb(0, 255, 174); 
+        border: 3px solid;
+        border-radius: 15px;
         white-space: nowrap;
         overflow: hidden;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 50px;
-    }
-    .input{
-        height: 40px;
-        width: 200px;
-        border: 2px solid;
-        top: 90px;
+        font-size: 50px;  
+     }
+     .input{
         position: relative;
-        margin-left: 60px;
+        height: 40px;
+        width: 190px;
+        border: 1px solid;
+        border-radius: 10px;
+        color: rgb(250, 132, 20) ;
+        background-color: rgb(10, 32, 65);
+        white-space: nowrap;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 70px;
+        left: 20px;
         
     }
-    .add{
+    .apply{
         height: 30px;
-        width: 70px;
+        width: 50px;
         border: 2px solid;
         position: relative;
-        top: 90px;
-        left: 20px;
-        background-color: rgb(255, 255, 255);
+        top: 35px;
+        left: 220px;
+        background-color: rgb(0, 0, 0);
         border-radius: 10px;
         color: rgb(17, 177, 177);
         -webkit-transition: all .15s ease-in-out;
         transition: all .15s ease-in-out;
-        border: 3px solid #00d7c3;
+        border: 1px solid #00d7c3;
         font-size: small;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
     }
-    .add:hover {
+    .apply:hover {
         box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
         border: 3px solid #ffffff;
         background-color: #8725d8;
@@ -143,34 +152,74 @@
         }
     .fontStyle{
         position: relative;
-        right: 240px;
-        top: 180px;
+        right: 465px;
+        top: 40px;
         display: flex;
         width: 100px;
-        height: 40px;
+        height: 30px;
         
     }
     #carsstyle{
+        border: 2px solid rgb(255, 76, 255);
+        border-radius: 5px;
+        background-color: #150c1c;
+        color: white;
         margin-left: 40px ;
     }
     .size{
-        height: 26px;
-        width: 100px;
-        position: relative;
-        left:10px;
+        height: 27px;
+        width: 100px;  
+        border: 2px solid rgb(255, 27, 255);
+        background-color: #180a22;
         color: white;
+        position: relative;
+        color: rgb(218, 92, 235);
     }
     .choose{
-        
         position: relative;
-        left: 50px;
-        color: white;
+        right: 293px;
+        
     }
     label{
-        margin-left: 20px;
+       
+        margin-left: -30px;
         white-space: nowrap;
         font-family: cursive;
     }   
+    .back{
+        position: relative;
+        top: 110px;
+        left: 140px; 
+        color: rgb(227, 238, 248);
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        border: 3px solid #00d7c3;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .back:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #33ffeb;
+        color: rgb(235, 235, 235);
+        }
+    .bttfull{
+        height: 20px;
+        width: 40px;
+        position: relative;
+        left: 170px; 
+        color: rgb(227, 238, 248);
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        border: 1px solid #d79a00;
+        border-radius: 5px;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .bttfull:hover {
+        box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #33ffeb;
+        color: rgb(235, 235, 235);
+        } 
     p{
         display: inline-block;
         color: #12e0dc;
@@ -181,31 +230,33 @@
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%,0); }
 }
-    .bg-color{
+    /* .bg-color{
         white-space: nowrap;
-        margin-left: -70px;
+        margin-left: -60px;
         font-family: cursive;
     }
     #Btnbackground-color{
-        margin-left: 40px;
+        margin-top: 30px;
+        margin-left: 20px;
         
     }
     .texts-colors{
-        margin-top: 120px; 
+        margin-top: 190px; 
         display: flex;
-        margin-left: -290px;   
+        margin-left: -200px;   
         
     }
     .text-color{
         white-space: nowrap;
-        margin-left: -60px;
+        margin-left: -70px;
         font-family: cursive;
          
     }
     #text-color{
-        margin-left: 50px;
+        margin-top: 60px;
+        margin-left: 40px;
     }
- 
+  */
 
 }
 @media only screen and (min-width:610px){
@@ -226,50 +277,59 @@
         margin: auto;
        
     } 
-    .Screen{
-        
-        height: 100px;
+    .Screen{ 
+        height: 130px;
         width: 80%;
         border: 5px solid;
         position: relative;
-        top: 50px;
-        left: 50px;
-        background-color: rgb(18, 17, 17); 
-        /* color: rgb(245, 250, 250); */
+        top: 40px;
+        left: 102px;
+        background-color: rgb(38, 35, 35);  
+        color: rgb(0, 213, 255); 
+        border: 7px solid;
+        border-radius: 15px;
         white-space: nowrap;
         overflow: hidden;
         box-sizing: border-box;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 50px;
-    }
-    .input{
-        height: 40px;
-        width: 250px;
-        border: 2px solid;
-        top: 90px;
+        font-size: 50px;  
+     }
+     .input{
+        height: 50px;
+        width: 490px;
         position: relative;
-        margin-left: 60px;
+        top: 80px;
+        left: 160px;
+        border: 2px solid;
+        border-radius: 10px;
+        color: rgb(250, 132, 20) ;
+        background-color: rgb(10, 32, 65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        
     }
-    .add{
+    .apply{
         height: 30px;
         width: 70px;
         border: 2px solid;
         position: relative;
-        top: 90px;
-        left: 200px; 
-        background-color: rgb(255, 255, 255);
+        top: 50px;
+        left: 660px; 
+        background-color: rgb(60, 50, 50);
         border-radius: 10px;
-        color: rgb(17, 177, 177);
+        color: rgb(22, 150, 255);
         -webkit-transition: all .15s ease-in-out;
         transition: all .15s ease-in-out;
-        border: 3px solid #00d7c3;
+        border: 3px solid #04100f;
         font-size: small;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         
     }
-    .add:hover {
+    .apply:hover {
         box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
         border: 3px solid #ffffff;
         background-color: #8725d8;
@@ -279,31 +339,73 @@
         width: 100px;
         height: 30px;
         display: flex;
-        margin-left: -220px;
+        margin-left: -350px;
     }
     #carsstyle{
-        margin-left: 40px ;
+        border: 2px solid rgb(255, 57, 255);
+        border-radius: 5px;
+        background-color: #150c1c;
+        color: white;
+        margin-left: 15px ;
     }
     .size{
-        height: 26px;
+        height: 29px;
         width: 100px;
-        position: relative;
-        left:10px;
+        border: 2px solid rgb(255, 15, 255);
+        background-color: #180a22;
         color: white;
+        border-radius: 4px;
+        position: relative;
+        left: 10px;
+       
     }
     .choose{
-         
-        position: relative;
-        right: 350px;
-        top:2px; 
-        color: white;
+        position:relative;
+        right: 345px;
+        top: 1px;
     }
     label{
-        margin-left: 20px;
+        margin-left: 100px;
         white-space: nowrap;
         font-family: cursive;
     }   
+    .Back{
+        width: 50px;
+        position: relative;
+        top: 80px;
+        left: 110px; 
+        color: rgb(255, 255, 255);
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        border: 1px solid #fb1cff;
+        border-radius: 2px;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .back:hover {
+        box-shadow: 0 0 10px 0 #ea47ff inset, 0 0 20px 2px #c933ff;
+        color: rgb(255, 254, 254);
+        }
+    .bttfull{
+        width: 50px;
+        position: relative;
+        left: 700px; 
+        color: rgb(9, 9, 9);
+        -webkit-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        border: 1px solid #ffffff;
+        border-radius: 9px;
+        font-size: small;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+    .bttfull:hover {
+        box-shadow: 0 0 10px 0 #ffd902 inset, 0 0 20px 2px #ffd000;
+        color: rgb(235, 235, 235);
+        }
     .bg-color{
+
         white-space: nowrap;
         font-family: cursive;
     }
@@ -332,12 +434,67 @@
         color: #12e0dc;
         padding-left: 100%;
         animation: move 10s linear infinite;
-    }
-    @keyframes move {
+    } 
+     @keyframes move {
     0%   { transform: translate(0, 0); }
     100% { transform: translate(-100%,0); }
-}
-    
+} 
+.blinking {
+        animation-name: blinkingFrames;
+        animation-duration: 10s;
+        /* animation-iteration-count: infinite; */
+    }
+    @keyframes blinkingFrames {
+        0% {opacity: 1.00;
+            transform: translate(0, 0);
+        }
+        10% {opacity: 0.00;
+            transform: translate(-10, 0);
+        }
+        20% {opacity: 1.00;
+            transform: translate(-20, 0);
+        }
+        30% {opacity: 0.00;
+            transform: translate(-30, 0);
+        }
+        40% {opacity: 1.00;
+            transform: translate(-40%,0);
+        }
+        50% {opacity: 0.00;
+            transform: translate(-50, 0);
+        }
+        60% {opacity: 1.00;
+            transform: translate(-60, 0);
+        }
+        70% {opacity: 0.00;
+            transform: translate(-70, 0);
+        }
+        80% {opacity: 1.00;
+            transform: translate(-80, 0);
+        }
+        90% {opacity: 0.00;
+            transform: translate(-90, 0);
+        }
+        100% {opacity: 1.00;
+            transform: translate(-100%,0);
+        }
+    }
+    .showHide{
+        position:relative;
+        left: 50px;
+        top: 300px;
+        color: #ffffff;
+        
+    }
+
+    .blank{
+        height: 100px;
+        width: 30px;
+        margin-left:-100px;
+        background-color: #0ed9c8;
+        border: 2px solid;
+        border-color: #a3d411;
+    }
 
 }
 
@@ -346,28 +503,33 @@
     <div class="wrapper">
         
         <div>
-            
+            <a href="first bord.html">
+                <button class="back" style="color: white;  " > <i class="fa fa-angle-left"></i> Back</button>
+            </a>
             <div class="Screen" id="Bntscreen">
                 <p id="Btnbox" class="text"></p>
             </div>
             <input class="input" id='Btninput'  type='text' placeholder="Enter text" onclick="changecolortext()">
             
-            <button id="Btnadd" class="add">Submit</button>
+            <button id="Btnadd" class="apply">Apply</button>
+            <button class="bttfull"> Full  </button>
+           
         
             <div>
-                <div class="flex relative top-32 left-10">
-                    <label for="cars" style="color: white;" for="name" >Choose a size </label>
+                <div class="flex relative top-32 left-10" >
+                    <label for="cars" style="color: white; " for="name" >Choose size </label>
                     <input placeholder=" Enter size" class="size" onkeyup="changesize()" id="size" style="color:black;">
                     <div class="flex relative top-16 right-32">
-                        <div class="bg-color" style="color: white;">Background color: </div>
+                        <div class="bg-color" style="color: white; margin-top: 20px;">Background color: </div>
                         <input type="color" id="Btnbackground-color" onclick="changeColorbackground()">
                     </div>
-                    <div class="texts-colors">
-                        <div class="text-color" style="color: rgb(243, 238, 238);">Text-color: </div>
+                    
+                    <div class="flex relative top-28 right-64">
+                        <div style="color: rgb(243, 238, 238); margin-top: 20px;">text color:</div>
                         <div style="color: black;"><input type="color" id="text-color" onclick="changeColortext()" ></div>
-                </div>
-                <div class="choose" style="color: black;">
-                    <select id="cars" name="cars" onclick="changeFonttext()">
+                    </div>
+                <div class="choose" style="color: rgb(21, 49, 139);">
+                    <select id="cars" name="cars" onclick="changeFonttext()" style="background-color: rgb(49, 17, 49); border: 2px solid rgb(255, 55, 255); color: white; border-radius: 2px; ">
                         <option >8</option>
                         <option >9</option>
                         <option >10</option>
@@ -408,6 +570,10 @@
                         <option >Moulpali</option>
                     </select>
                 </div>
+                </div>
+                <div class="showHide">
+                    <!-- <button id="btn-fade" onclick="changeAnimationStyle()">Fade Out</button> -->
+                    <button id="flash-toggle" style=" margin-left: 300px; margin-top:-350px; height: 30px; width: 100px; border-radius: 5px;" onclick="$('.text').toggleClass('blinking')">Animation</button>
                 </div>
             </div>
         </div>
@@ -468,10 +634,10 @@
                 screens[i].style.fontFamily = carsstyle.value;
             }
         }
-// function changeFonttext() {
-//     const sizes = textfont.value;
-//     document.getElementsByClassName("text").style.fontSize=sizes+"px";
-// }
+ function changeFonttext() {
+     const sizes = textfont.value;
+    document.getElementsByClassName("text").style.fontSize=sizes+"px";
+ }
     </script>
 </body>
 </html>
